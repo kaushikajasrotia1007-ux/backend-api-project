@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f9;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      height: 100vh;
+      position: fixed;
+      background: #1e293b;
+      color: #fff;
+      padding-top: 20px;
+    }
+
+    .sidebar h4 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #cbd5e1;
+      padding: 12px 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background: #334155;
+      color: #fff;
+      padding-left: 25px;
+    }
+
+    /* Main Content */
+    .main {
+      margin-left: 240px;
+      padding: 20px;
+    }
+
+    /* Navbar */
+    .topbar {
+      background: #fff;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    /* Cards */
+    .card-box {
+      border-radius: 15px;
+      padding: 20px;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    .card-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .bg1 { background: #667eea; }
+    .bg2 { background: #48bb78; }
+    .bg3 { background: #ed8936; }
+    .bg4 { background: #e53e3e; }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h4>Admin Panel</h4>
+    <a href="#"><i class="bi bi-speedometer2"></i> Dashboard</a>
+    <a href="#"><i class="bi bi-people"></i> Users</a>
+    <a href="/admin/Product"><i class="bi bi-box"></i> Products</a>
+    <a href="#"><i class="bi bi-cart"></i> Orders</a>
+    <a href="#"><i class="bi bi-gear"></i> Settings</a>
+    <a href="/logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <!-- Topbar -->
+    <div class="topbar d-flex justify-content-between">
+      <h5>Dashboard</h5>
+      <div>Welcome, Admin 👋</div>
+    </div>
+
+    <!-- Cards -->
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card-box bg1">
+          <h6>Total Users</h6>
+          <h3>1,245</h3>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-box bg2">
+          <h6>Orders</h6>
+          <h3>320</h3>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-box bg3">
+          <h6>Products</h6>
+          <h3>87</h3>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-box bg4">
+          <h6>Revenue</h6>
+          <h3>₹45,000</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

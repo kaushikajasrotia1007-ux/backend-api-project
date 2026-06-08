@@ -1,0 +1,49 @@
+<%-include('header')%>
+
+
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you</p>
+</div>
+
+<!-- CONTACT SECTION -->
+<div class="contact-section">
+
+    <!-- CONTACT INFO -->
+    <div class="card info-card">
+        <h2>📍 Address</h2>
+        <p>Punjab, India</p>
+
+        <h3>📞 Phone</h3>
+        <p>+91 9876543210</p>
+
+        <h3>📧 Email</h3>
+        <p>contact@email.com</p>
+    </div>
+
+    <!-- FORM -->
+    <div class="card form-card">
+
+        <h2>Send Message</h2>
+
+        <form action="/contact" method="POST" class="form">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send 🚀</button>
+
+        </form>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<%-include('footer')%>
+
